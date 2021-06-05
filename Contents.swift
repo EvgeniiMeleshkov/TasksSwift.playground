@@ -20,6 +20,21 @@ func check (input: String) -> Bool {
     return true
 }
 
-check(input: "Hello!")
-check(input: "1poijnu v92")
+check(input: "Hello!")           //false
+check(input: "1poijnu v92")      //true
 //_____________________________________________
+
+
+func check2 (input: String) -> Bool {
+    return Set(input).count == input.count
+}
+
+check2(input: "🌿🐕☘️")             //true
+check2(input: "qw.ert yui,op/42")   //true
+check2(input: "Hello!")             //false
+
+//______________________________________________
+
+
+
+
